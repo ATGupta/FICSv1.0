@@ -19,4 +19,3 @@ if proceed:
     st=process.process(st)
 else:
     processIgnored(st)
-#Work on this: The water has reached 3. 4.5 is the number
