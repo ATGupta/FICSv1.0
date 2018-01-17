@@ -3,7 +3,7 @@ Author: Arya T Gupta
 
 Contact: arya.tanmay.gupta@gmail.com
 
-Programming language: Python 3.0
+Programming language: Python v3
 
 # How to access the software?
 The line 14 of main.py introduces a variable "st". The string stored in this variable is processed and water height is extracted.
