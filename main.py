@@ -16,6 +16,7 @@ st="the Half of my car's wheels have drowned."
 st=st.lower()
 proceed = validityCheck(st)
 if proceed:
-    st=process.process(st)
+    height=process.process(st)
+    print (height)
 else:
     processIgnored(st)
