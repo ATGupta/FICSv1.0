@@ -18,16 +18,10 @@ def process(st):
     st=handleDeterminer(st)
     #print(st)
     checkForMultiplier(st)
-    height = checkHeightUnits(st)
-    if height != 0:
-        return height*multiplier
-    height = checkDegreeWord(st)
-    if height != 0:
-        return height*multiplier
-    height = checkReferredMeasurements(st)
-    if height != 0:
-        return height*multiplier
-    #return st
+    checkHeightUnits(st)
+    checkDegreeWord(st)
+    checkReferredMeasurements(st)
+    return st
 
 def seperateLettersNumbersSymbols(st):
     st2=""
@@ -178,11 +172,11 @@ def checkHeightUnits(st):
                         else:
                             continue
             #if not continued
-            #threading.Thread(processHeight(value))
-            return value
+            threading.Thread(processHeight(value))
+            return
         except ValueError or IndexError:
             continue
-    return 0
+    return
 
 def checkDegreeWord(st):
     for word in st:
@@ -192,19 +186,19 @@ def checkDegreeWord(st):
             try:
                 if st[st.index(word)+1] == "floor":
                     height = (index+1)*units.referredMeasures["floor"]
-                    #threading.Thread(processHeight(height))
-                    return height
+                    threading.Thread(processHeight(height))
+                    return
             except IndexError:#the array has ended, although, continue
                 continue
-    return 0
+    return
 
 def checkReferredMeasurements(st):
     keys=list(units.referredMeasures.keys())
     for word in st:
         if set('wheels of car'.split()).issubset(st) or \
             set('wheel of car'.split()).issubset(st):
-            #threading.Thread(processHeight(units.referredMeasures['wheels of car']))
-            return units.referredMeasures['wheels of car']
+            threading.Thread(processHeight(units.referredMeasures['wheels of car']))
+            return
 
 def processHeight(height):
     height=height*multiplier
