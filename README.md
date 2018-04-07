@@ -12,7 +12,7 @@ This software can be attached to a larger system which fetches posts in real tim
 
 The variable "height" defined at line 203 of the file process.py contains the height of water that has been extracted from the string which was passed through "st" introduced at line 14 of main.py.
 
-#About this software
+# About this software
 This is a referral repository for a project, which has been published as an original research paper.
 
 This is an interdisciplinary project that involves subjects like environmental engineering, artificial intelligence, and machine learning. This paper was published in the <b>Open Water Journal, Brigham Young University Press, Volume 5, Issue 2, 2018</b>.
@@ -23,8 +23,8 @@ The objective of Fics is to provide such a platform that can be used for the cit
 
 This software provides such an opportunity to the people that they don't need any specific format, any specific platform to give the real-time information about an ongoing flood event. They just need to use their phones or any system that is available and post their status publicly through social media. The server in which this system is installed will convert their posts to extract required mathematical information about the information of the geographical location which is tagged with the post, for example, the water height. In this way,
 
-     -	scientific modelling of the flood can be done in real time. This will help in forecasting the immediate nature of the flood and its extent according to the terrain of the locality; also the nature and probability of future floods. 
-     -	immediate help can be provided to the citizens who are trapped because of a natural calamity or a major accident which is man-made, a flood in this case.
+   -	scientific modelling of the flood can be done in real time. This will help in forecasting the immediate nature of the flood and its extent according to the terrain of the locality; also the nature and probability of future floods. 
+   -	immediate help can be provided to the citizens who are trapped because of a natural calamity or a major accident which is man-made, a flood in this case.
 
 There were works already available who focus on gathering such data. Those works are cited in the paper. All of these projects need a form to be filled through which required information and values are to be submitted. On this other hand, Fics provides platform independence to the citizens and no extra application needs to be installed.
 
